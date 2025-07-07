@@ -1,0 +1,175 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 450px;
+  margin: 80px auto;
+  background: white;
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #ff6f91;
+}
+
+h1 span {
+  color: #333;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 12px 15px;
+  border: 2px solid #ffb6b9;
+  border-radius: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #ff6f91;
+}
+
+#addBtn {
+  background-color: #ff6f91;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+#addBtn:hover {
+  background-color: #f06292;
+}
+
+.filter-btns {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-btns button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f1f3f4;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-btns button.active {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  color: white;
+  font-weight: bold;
+}
+
+.task-list {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task-item {
+  background: #fff0f5;
+  padding: 18px;
+  border-radius: 12px;
+  border-left: 5px solid #ff6f91;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-content {
+  text-align: left;
+  flex-grow: 1;
+}
+
+.task-text {
+  font-size: 16px;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.task-meta {
+  font-size: 13px;
+  color: #666;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status-badge.pending {
+  background: #fff176;
+  color: #444;
+}
+
+.status-badge.in-progress {
+  background: #4fc3f7;
+  color: white;
+}
+
+.status-badge.completed {
+  background: #81c784;
+  color: white;
+}
+
+.status-btn {
+  background: #64b5f6;
+  color: white;
+  padding: 8px 14px;
+  font-size: 13px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: background-color 0.3s;
+}
+
+.status-btn:hover {
+  background: #42a5f5;
+}
+
+.status-completed {
+  color: #81c784;
+  font-weight: bold;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.empty-state {
+  text-align: center;
+  color: #999;
+  padding: 25px;
+  font-style: italic;
+}

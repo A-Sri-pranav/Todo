@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌈 Cloud Task</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>☁️ <span>Cloud Task</span></h1>
+    <input id="taskInput" type="text" placeholder="Enter your task" />
+    <button id="addBtn">Add</button>
+    <div class="filter-btns">
+      <button data-status="Pending">Pending</button>
+      <button data-status="In Progress">In Progress</button>
+      <button data-status="Completed">Completed</button>
+    </div>
+    <div id="taskList" class="task-list"></div>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
